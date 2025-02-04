@@ -10,8 +10,8 @@ const India = (props) => {
 
     const newsUpade = async () => {
         props.setProgress(10)
-        // const getUrl = `https://newsapi.org/v2/everything?q=india&apiKey=${props.apikey}`
-        let getUrl ="https://gnews.io/api/v4/search?q=example&lang=en&country=in&max=20&apikey=4884af1d92afa19a25b9ecd189964fa6"
+        const getUrl = `https://newsapi.org/v2/everything?q=india&apiKey=${props.apikey}`
+        // let getUrl ="https://gnews.io/api/v4/search?q=example&lang=en&country=in&max=20&apikey=4884af1d92afa19a25b9ecd189964fa6"
         const data = await fetch(getUrl)
         props.setProgress(30)
         const bigData = await data.json();
