@@ -39,7 +39,7 @@ const India = (props) => {
         <>
 
             <div className='container my-3'>
-                <h1 className=' text-center my-5'>Newsdonkey - All India News </h1>
+                <h1 className=' text-center my-5'>India News- All India News </h1>
                 <div className='container my-3  d-flex justify-content-end'>
                 </div>
                 {loading && <Spinner />}
